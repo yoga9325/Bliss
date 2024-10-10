@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Videos</title>
+ <link rel="stylesheet" href="yogavid.css">
+</head>
+<body>
+  
+  
+  
+  
+  <center><h1>Sea-Shore Videos</h1></center>
+  
+    <div class="container">
+    <video  src="video/video21.mp4" class="slider" type="video/mp4" loop autoplay controls></video>
+    
+    <ul>
+      <li onclick="videoslider('video/video22.mp4')"><video src="video/video22.mp4" ></video></li>
+      <li onclick="videoslider('video/video23.mp4')"><video src="video/video23.mp4"></video></li>
+      <li onclick="videoslider('video/video24.mp4')"><video src="video/video24.mp4"></video></li>
+      
+
+    </ul> 
+  </div>
+  <script>
+
+    function videoslider(link){
+      document.querySelector(".slider").src = link;
+    }
+
+  </script>
+</body>
+</html>

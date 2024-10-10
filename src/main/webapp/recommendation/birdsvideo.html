@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Videos</title>
+ <link rel="stylesheet" href="yogavid.css">
+</head>
+<body>
+  
+  
+  
+  
+  <center><h1>Bird Videos</h1></center>
+  
+    <div class="container">
+    <video  src="video/video25.mp4" class="slider" type="video/mp4" loop autoplay controls></video>
+    
+    <ul>
+      <li onclick="videoslider('video/video26.mp4')"><video src="video/video26.mp4" ></video></li>
+      <li onclick="videoslider('video/video27.mp4')"><video src="video/video27.mp4"></video></li>
+      <li onclick="videoslider('video/video28.mp4')"><video src="video/video28.mp4"></video></li>
+      
+
+    </ul> 
+  </div>
+  <script>
+
+    function videoslider(link){
+      document.querySelector(".slider").src = link;
+    }
+
+  </script>
+</body>
+</html>

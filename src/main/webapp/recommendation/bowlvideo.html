@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Videos</title>
+ <link rel="stylesheet" href="yogavid.css">
+</head>
+<body>
+  
+  
+  
+  <center><h1>Bowl Therapy videos</h1></center>
+  
+    <div class="container">
+    <video  src="video/video33.mp4" class="slider" type="video/mp4" loop autoplay controls></video>
+    
+    <ul>
+      <li onclick="videoslider('video/video34.mp4')"><video style=" width: 80px;" src="video/video34.mp4" ></video></li>
+      <li onclick="videoslider('video/video35.mp4')"><video src="video/video35.mp4"></video></li>
+      <li onclick="videoslider('video/video36.mp4')"><video style=" width: 80px;" src="video/video36.mp4"></video></li>
+      
+
+    </ul> 
+  </div>
+  <script>
+
+    function videoslider(link){
+      document.querySelector(".slider").src = link;
+    }
+
+  </script>
+</body>
+</html>

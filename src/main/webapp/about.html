@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bliss </title>
+    <script src="https://kit.fontawesome.com/20551e3bc2.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+	<style>
+	/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+::selection{
+  background:	#FF676D;
+  color: #fff;
+}
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+.container .main-card .cards{
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF676D;
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 20px;
+  color: #FF676D;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF676D;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: #FF676D;
+  background-color: #fff;
+  border-color: #FF676D;
+}
+ .container .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #fff;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button label.active{
+  width: 35px;
+}
+#one:checked ~ .button .one{
+  width: 35px;
+}
+#one:checked ~ .button .two{
+  width: 15px;
+}
+#two:checked ~ .button .one{
+  width: 15px;
+}
+#two:checked ~ .button .two{
+  width: 35px;
+}
+input[type="radio"]{
+  display: none;
+}
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
+	</style>
+</head>
+
+
+
+<body>
+
+<section id="header">
+    <a href="#"><img src="img/logo.png"class=logo alt=""></a>
+    <div>
+        <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.jsp">Sign In</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.jsp">Contact</a></li>
+       
+        </ul>
+    </div> 
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+    </div>
+</section>
+
+<section id="page-header" class="about-header">
+    
+    <h2>#KNOW US </h2>
+    
+    <P> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quo, quod culpa fuga rem quae aspernatur, placeat iste ipsam quaerat ipsum vero alias, sapiente nisi. </P>
+  
+</section>
+<section id="about-head" class="section-p1">
+    
+    <div style="text-align:center;width:300px;margin:0 auto;border-style:none">
+       <h3>Who we are?</h3>
+        
+        &nbsp&nbsp&nbsp<i class="fa-solid fa-user fa-3x"></i>
+<h4>Contact</h4>
+<p> Yogesh Panjarkar: 9325305420<br>
+Md Shahbaz: 9065925397<br>
+Neha Patil: 9158567600</p>
+<br>
+<i class="fa-brands fa-instagram fa-3x"></i>
+<p><i class="fa-brands fa-instagram">&nbsp </i>nehasp2641 </p>
+<br>
+<i class="fa-solid fa-link fa-3x"></i>
+<p>bliss.com</p><br>
+<i class="fa-solid fa-house fa-3x"></i>
+<p>Dr. Babasaheb Ambedkar Marathwada University, Chattrapati Shambhaji Nagar</p><br>
+
+
+    </div>
+
+</section>
+
+ <section>
+ <div class="container">
+      <input type="radio" name="dot" id="one" />
+      <input type="radio" name="dot" id="two" />
+      <div class="main-card">
+        <div class="cards">
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="img/about/yp.jpg" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Yogesh Panjarkar</div>
+                <div class="job">
+					Full stack Java Developer
+                </div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="img/about/neha.jpg" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Neha Patil</div>
+                <div class="job">UI Designer</div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="img">
+                <img src="img/about/md.jpg" alt="" />
+              </div>
+              <div class="details">
+                <div class="name">Md Shahbaz</div>
+                <div class="job">Web Devloper</div>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          
+          
+          
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <label for="one" class="active one"></label>
+        <label for="two" class="two"></label>
+      </div>
+    </div>
+ </section>
+<section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+        <h4> Search your account</h4>
+        <p> Get E-mail update for fast <span>reflief. </span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address ">
+        <button class="normal">Sign up</button>
+    </div>
+ </section>
+
+<footer class="section-p1 ">
+
+
+    <script src="script.js"></script>
+    <div class="col">
+        <img class="logo" src="img/logo.png" alt="">
+		<br><br>
+        <h4>CONTACT</h4>
+        <p><strong>Address:</strong> Dr. Babasaheb Ambedkar Marathwada <br>University,Chhatrapati Sambhaji Nagar</p>
+        <p><strong>Phone :</strong>845952148</p>
+        
+        <div class="follow">
+            <h4>follow us</h4>
+            <div class="icon">
+               <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter " onclick=img src="https://publish.twitter.com"  ></i>
+                <i class="fab fa-instagram"></i>
+            
+				
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="about.html">About us </a>
+        
+        <a href="#">privacy Policy </a>
+        <a href="#">Term & Condition </a>
+        <a href="contact.html">contact us  </a>
+    </div>
+    <div class="col">
+        <h4>MY Account </h4>
+        <a href="login.html">sign in </a>
+        <a href="#">Help </a>
+    </div>
+   
+    
+</footer>
+</body>   
+</html>   

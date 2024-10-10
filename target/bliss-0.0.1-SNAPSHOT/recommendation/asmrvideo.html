@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Videos</title>
+  <link rel="stylesheet" href="yogavid.css">
+  <style>
+    .container ul li video{
+  width: 80px;
+  transition: all 0.3s;
+}
+  </style>
+</head>
+<body>
+  
+  
+  <center><h1>Asmr Videos</h1></center>
+  
+    <div class="container">
+    <video  src="video/video9.mp4" class="slider" type="video/mp4" loop autoplay controls></video>
+    
+    <ul>
+      <li onclick="videoslider('video/video10.mp4')"><video src="video/video10.mp4" ></video></li>
+      <li onclick="videoslider('video/video11.mp4')"><video src="video/video11.mp4"></video></li>
+      <li onclick="videoslider('video/video12.mp4')"><video src="video/video12.mp4"></video></li>
+      
+
+    </ul> 
+  </div>
+  <script>
+
+    function videoslider(link){
+      document.querySelector(".slider").src = link;
+    }
+
+  </script>
+</body>
+</html>
